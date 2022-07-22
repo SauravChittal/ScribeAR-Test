@@ -79,7 +79,7 @@ export default function CustomizedMenus() {
           <IconButton onClick={clickAddList} sx={{
             position: 'absolute',
             left: '30.5vw',
-            '@media (min-width: 320px)': {
+            '@media (max-width: 600px)': {
               left: '70vw',
             }
           }}>
