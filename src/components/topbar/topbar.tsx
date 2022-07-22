@@ -87,10 +87,9 @@ export default function TemporaryDrawer(props) {
                                 >
                                     <ThemeProvider theme={myTheme}>
                                         <MenuIcon
-                                            // color="primary"
+                                            color="primary"
                                             fontSize="large"
                                             sx={{
-                                                color: 'red',
                                                 fontSize: '2rem',
                                                 '@media (max-width:900px)': {
                                                     position: 'absolute',
