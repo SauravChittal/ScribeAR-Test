@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useCallback, useMemo } from 'react';
+import { useStore } from 'react-redux';
 import { ControlStatus, ApiStatus } from '../../../redux/types';
 
 export const getSpeechRecognition = () => {
@@ -9,6 +10,7 @@ export const getSpeechRecognition = () => {
   const speechRecognition = new (window as any).webkitSpeechRecognition();
   speechRecognition.continuous = true;
   speechRecognition.interimResults = true;
+  // speechRecognition.lang = 'kn-IN';
   return speechRecognition as SpeechRecognition;
 };
 
