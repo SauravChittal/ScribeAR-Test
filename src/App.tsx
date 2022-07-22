@@ -9,7 +9,7 @@ function App() {
     return state.DisplayReducer as DisplayStatus;
  });
 
-  window.localStorage.clear();
+  // window.localStorage.clear();
   
   return (
     <div className="App" style = {{ color:  display.primaryColor, background: display.primaryColor}}>
